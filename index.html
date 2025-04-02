@@ -1,0 +1,190 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Serviço xxx</title>
+        <link rel="stylesheet" href="cssindez.css">
+        <!--Parte de cima, nome, número e data (pode ser adicionado mais coisas) -->
+    </head>
+    <body>
+        
+        <div class="ptdcima">
+            <div class="texto1">
+                <h4>NOME</h4>
+                <p>xxxxxxxxxxxxxxxxxxxxxx</p>
+            </div>
+            <div class="texto2">
+                <h4>NÚMERO DE CLIENTE</h4>
+                <p>xxxxxxxxxxxxxxx</p>
+            </div>
+            <div class="texto3">
+                <h4>DATA</h4>
+                <p>00 de jan. de 0000</p>
+            </div>
+            <!--Logo do site -->
+            <img src="Sem Título-2.png" class="simbolo" height="100px" width="100px">
+            <!-- Imagem do carro que fica abaixo das divs (Deve ser trocado(essa ta muito
+            paia(de verdade)))-->
+        </div>
+        <img src="CARRO.png" class="CARRO2">
+        <!--Div left e right pra dividir qual fica na esquerda e qual fica na direita
+        -->
+        <div class="left">
+            <!--Primeira parte da div -->
+
+            <div class="conteudo"></div>
+            <div class="tdsdcima"></div>
+            <div class="estd1">
+                <h3>
+                    <span class="linhzul">ESTA</span>DO DO SERVIÇO</h3>
+            </div>
+            <div class="estd2" id="expandir">
+                <h4>
+                    CONDIÇÃO DO VEÍCULO</h4>
+            </div>
+            <div class="Texto_Cond_veic">O técnico responsável preparou algumas informações
+                sobre o seu veículo. Por favor, tome nota destas informações.</div>
+            <div class="descvs">
+                DESCRIÇÃO VISUAL</div>
+            <!--Div do video, arrumar um de exemplo -->
+            <div class="video-container" id="videoContainer">
+                <video id="video" src="vidtela.mp4" controls="controls"></video>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="estd3">
+
+    
+    <h3>Visão Geral do Serviço</h3>
+</div>
+<div class="vsgrl1"></div>
+<div class="vsgrl2">Obrigado por sua aprovação. Por favor, veja o resumo abaixo.
+</div>
+<div class="vsgrl3">POSIÇÕES
+<div class="tbl">
+    <table>
+        <tr>
+            <td>
+                <img src="blylw.png" height="20px" width="20px">
+            </td>
+            <td class="blylwtxt" style="min-width: 100%; text-align: left; color: black; ">
+                Pode precisar de atenção futura
+            </td>
+            <td>
+                <img src="blred.png" height="20px" width="20px">
+            </td>
+            <td class="blredtxt" style="min-width: 100%; text-align: left; color: black; ">
+                Precisa de atenção imediata
+            </td>
+
+        </tr>
+    </table>
+    </div>
+    </div>
+<div class="vsgrl4">
+<table class="tablefts">
+    <tr>
+        <td style="min-width: 100%; text-align: left; color: black; font-weight: 600;">
+            Necessidades adicionais de serviço:</td>
+        <td>
+            Fotos & Vídeos
+        </td>
+        <td>
+            VALOR
+        </td>
+        <td>
+            ATENÇÃO
+        </td>
+        <td>
+            SIM
+        </td>
+        <td>
+            <div class>
+            NÃO
+            </div>
+        </td>
+
+    </tr>
+</table>
+
+</div>
+<div class="estd4">
+<h3>Recolha do Veículo</h3>
+</div>
+
+<div class="right">
+<div class="contact">
+    <p>Nome do Atendente</p>
+    <p>Email: exemplo@email.com</p>
+    <p>Telefone: (XX) XXXX-XXXX</p>
+</div>
+</div>
+<div class="right2">
+<div class="contact2">
+    <h3>Seu Contato</h3>
+</div>
+</div>
+</div>
+
+
+
+</container>
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--SCRIPT PARA EXPANDIR VIDEO-->
+<script>
+const videoContainer = document.getElementById("videoContainer");
+const overlay = document.getElementById("overlay");
+const video = document.getElementById("video");
+
+// Alternar expansão do vídeo ao clicar
+videoContainer.addEventListener("click", () => {
+videoContainer
+    .classList
+    .toggle("expanded");
+overlay
+    .classList
+    .toggle("active");
+});
+
+// Fechar expansão ao clicar no overlay ou pressionar ESC
+overlay.addEventListener("click", closeVideo);
+document.addEventListener("keydown", (e) => {
+if (e.key === "Escape") {
+    closeVideo();
+}
+});
+
+function closeVideo() {
+videoContainer
+    .classList
+    .remove("expanded");
+overlay
+    .classList
+    .remove("active");
+}
+</script>
+</body>
+</html>
